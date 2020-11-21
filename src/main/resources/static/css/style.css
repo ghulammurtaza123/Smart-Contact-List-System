@@ -1,0 +1,163 @@
+
+.banner{
+    width:auto;
+    height:93vh;
+    background:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)),url(../img/girl-calling3.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+
+    color:white;
+
+
+}
+.flex{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.btn-info {
+    font-family: Raleway-SemiBold;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgba(58, 133, 191, 0.75);
+    letter-spacing: 1px;
+    line-height: 15px;
+    border: 2px solid rgba(58, 133, 191, 0.75);
+    border-radius: 40px;
+    background: lightgoldenrodyellow;
+    transition: all 0.3s ease 0s;
+}
+
+
+.my-register{
+
+    padding:0px;
+
+}
+
+
+
+
+/*login css*/
+
+
+.logins {
+
+    background-color: #EAEAEA;
+}
+#login .container #login-row #login-column #login-box {
+    margin-top: 120px;
+    max-width: 600px;
+    height: 420px;
+    border: 1px solid #9C9C9C;
+    background-color: white ;
+}
+#login .container #login-row #login-column #login-box #login-form {
+    padding: 20px;
+}
+#login .container #login-row #login-column #login-box #login-form #register-link {
+    margin-top: -85px;
+}
+
+
+/*sidebar style*/
+
+@media only screen and (max-width:600px ){
+
+    .sidebar{
+        display:none;
+        width:60% !important;
+        background: white;
+        height:100%;
+        position:fixed;
+        padding-top: 20px;
+        z-index:999999999;
+
+
+    }
+    .content{
+        margin-left: 0% !important;
+
+
+    } 
+
+
+}
+
+
+
+.sidebar{
+    
+    width:18%;
+    background: lightgoldenrodyellow;
+    height:100%;
+    position:fixed;
+    padding-top: 45px;
+    border-radius: 10px;
+
+
+}
+.sidebar a{
+    display:block;
+    width:100%;
+    padding:10px 25px;
+    text-decoration: none;
+    color:gray;
+
+
+
+}
+
+.sidebar a:hover{
+
+    background: #e2e2e2;
+
+
+}
+
+.sidebar .divider{
+    height: .5px;
+    width:100%;
+    margin-top: 10px;
+    background: #e2e2e2;
+
+
+
+}
+
+.sidebar .crossBTN{
+    
+    position:absolute;
+    top:13px;
+    right:35px;
+    cursor: pointer;
+    
+}
+.content{
+    margin-left: 20%;
+
+
+}
+
+.profile-image{
+    
+    width:35px;
+    height:35px;
+    object-fit: cover;
+    border-radius: 50%;
+    
+}
+
+.input{
+    
+    
+    display: none;
+}
+
+body{
+
+    background-color: #EAEAEA;
+}

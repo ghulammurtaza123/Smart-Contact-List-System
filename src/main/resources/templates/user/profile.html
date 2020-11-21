@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="user/base::layout(~{::section})" >
+    <head>
+        <meta charset="UTF-8">
+        <title th:text="${title}" >Profile</title>
+    </head>
+    <body>
+        <section>
+
+            <div class="container">
+
+                <div class="card mr-3 ml-3 text-center">
+
+                    <div class="card-body" >
+                        <div 
+                            class="container"><img  style= "height:200px; width:200px;" class="profile-image" src="" th:src="@{'/img/'+${user.imageUrl}}" alt="Profile Image"/>
+                        </div>
+
+                        <h1 class="text-center" th:text="${user.name}"></h1>
+                        <table class="table table-hover" >
+                            <thead>
+                                <tr>
+                                    <th scope="col">UserId</th>
+                                    <th scope="col">USER<span th:text="${user.id}"></span></th>
+
+                                </tr>
+                            </thead>
+                            <tr>
+                                <th scope="row">Email</th>
+                                <td><span th:text="${user.email}"></span></td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">Role</th>
+                                <td><span th:text="${user.roles}"></span></td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">Acount Active</th>
+                                <td><span th:text="${user.enable}"></span></td>
+
+                            </tr>
+
+                            <tr>
+                                <th scope="row">About</th>
+                                <td><span th:text="${user.about}"></span></td>
+
+                            </tr>
+
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </body>
+</html>
