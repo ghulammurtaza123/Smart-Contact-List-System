@@ -61,6 +61,23 @@
 #login .container #login-row #login-column #login-box #login-form #register-link {
     margin-top: -85px;
 }
+/*searchresult*/
+
+.search-contacts{
+
+    position:relative;
+
+
+}
+.search-result{
+    width:100%;
+    position:absolute;
+    padding:10px;
+    border: 1px solid grey;
+    display:none;
+    background: white;
+}
+
 
 
 /*sidebar style*/
@@ -90,7 +107,7 @@
 
 
 .sidebar{
-    
+
     width:18%;
     background: lightgoldenrodyellow;
     height:100%;
@@ -129,12 +146,12 @@
 }
 
 .sidebar .crossBTN{
-    
+
     position:absolute;
     top:13px;
     right:35px;
     cursor: pointer;
-    
+
 }
 .content{
     margin-left: 20%;
@@ -143,17 +160,17 @@
 }
 
 .profile-image{
-    
+
     width:35px;
     height:35px;
     object-fit: cover;
     border-radius: 50%;
-    
+
 }
 
 .input{
-    
-    
+
+
     display: none;
 }
 

@@ -2,6 +2,7 @@
 package com.smart.repository;
 
 import com.smart.model.Contacts;
+import com.smart.model.User;
 import java.util.List;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -15,5 +16,6 @@ public interface ContactRepository extends JpaRepository<Contacts, Integer> {
     
     @Query("from Contacts as c where c.user.id =:userId")
     public Page<Contacts> findContactsByUser(@Param("userId") int userId, Pageable p);
+    public List<Contacts> findByNameContainingAndUser(String name,User user);
     
 }

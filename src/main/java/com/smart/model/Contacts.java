@@ -1,6 +1,7 @@
 
 package com.smart.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -24,6 +25,7 @@ public class Contacts {
     @Column(length = 1000)
     private String description;
     @ManyToOne
+    @JsonIgnore
     private User user;
 
     public int getcId() {
